@@ -1,0 +1,74 @@
+- name: Home
+  # Optionally, if you only have a single page you can hide the desktop navigation for a cleaner look
+  # hide-desktop-navigation: true
+  columns:
+    - size: small
+      widgets:
+        - type: calendar
+          first-day-of-week: monday
+
+        - type: rss
+          limit: 10
+          collapse-after: 3
+          cache: 12h
+          feeds:
+            - url: https://selfh.st/rss/
+              title: selfh.st
+            - url: https://www.animenewsnetwork.com/news/rss.xml?ann-edition=in
+              title: Anime News
+            - url: https://animeschedule.net/subrss.xml
+              title: Anime Episodes
+                    
+        
+    - size: full
+      widgets:
+        - type: group
+          widgets:
+            - type: hacker-news
+            - type: lobsters
+
+        - type: videos
+          channels:
+            - UCXuqSBlHAE6Xw-yeJA0Tunw # Linus Tech Tips
+            - UCsBjURrPoezykLs9EqgamOA # Fireship
+            - UCBJycsmduvYEL83R_U4JriQ # Marques Brownlee
+            - UCHnyfMqiRRG1u-2MsSQLbXA # Veritasium
+            - UCn7DATpF0Nk-YJmjw4gMwfg # Trackin Tech English
+
+        - type: group
+          widgets:
+            - type: reddit
+              subreddit: technology
+              show-thumbnails: true
+            - type: reddit
+              subreddit: selfhosted
+              show-thumbnails: true
+            - type: reddit
+              subreddit: CarsIndia
+              show-thumbnails: true
+            - type: reddit
+              subreddit: anime
+              show-thumbnails: true
+            - type: reddit
+              subreddit: anime
+              show-thumbnails: true
+
+    - size: small
+      widgets:
+        - type: weather
+          location: Gwalior
+          units: metric # alternatively "imperial"
+          hour-format: 12h # alternatively "24h"
+          # Optionally hide the location from being displayed in the widget
+          # hide-location: true
+        
+        - type: releases
+          cache: 1d
+          # Without authentication the Github API allows for up to 60 requests per hour. You can create a
+          # read-only token from your Github account settings and use it here to increase the limit.
+          # token: ...
+          repositories:
+            - glanceapp/glance
+            - go-gitea/gitea
+            - immich-app/immich
+            - syncthing/syncthing
