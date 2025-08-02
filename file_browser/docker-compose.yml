@@ -1,0 +1,14 @@
+services:
+  filebrowser:
+    image: filebrowser/filebrowser
+    ports:
+      - "8089:80"
+    volumes:
+      - ./filebrowser_data:/srv
+      - ./filebrowser_database:/database
+      - ./filebrowser_config:/config
+
+volumes:
+  filebrowser_data:
+  filebrowser_database:
+  filebrowser_config:

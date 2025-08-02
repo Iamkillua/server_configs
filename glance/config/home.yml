@@ -1,12 +1,16 @@
 - name: Home
-  # Optionally, if you only have a single page you can hide the desktop navigation for a cleaner look
-  # hide-desktop-navigation: true
   columns:
     - size: small
       widgets:
         - type: calendar
           first-day-of-week: monday
 
+
+        - type: server-stats
+          servers:
+          - type: local
+            name: Services
+            
         - type: rss
           limit: 10
           collapse-after: 3
@@ -52,7 +56,9 @@
             - type: reddit
               subreddit: anime
               show-thumbnails: true
-
+    
+    
+        
     - size: small
       widgets:
         - type: weather
