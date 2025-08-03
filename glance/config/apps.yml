@@ -12,25 +12,25 @@
             glance:
               name: glance
               description: container running the homepage of this server
-              url: 192.168.29.69:6969
-              icon: auto-invert https://cdn.jsdelivr.net/gh/selfhst/icons/png/glance.png
+              url: http://192.168.29.69:6969/
+              icon: auto-invert https://cdn.jsdelivr.net/gh/selfhst/icons/png/glance-dark.png
               hide: false
 
             nefarious:
               name: nefarious
               description: Content Serach Platform
-              url: 192.168.29.69:8001
+              url: http://192.168.29.69:8001/
               hide: false
             transmission:
               name: transmission
               description: Torrent Downloader
-              url: 192.168.29.69:9091
+              url: http://192.168.29.69:9091
               icon: auto-invert https://cdn.jsdelivr.net/gh/selfhst/icons/png/transmission-light.png
               hide: false
             portainer:
               name: portainer
               description: Container Management platform
-              url: 192.168.29.69:9091
+              url: http://192.168.29.69:9443
               icon: auto-invert https://cdn.jsdelivr.net/gh/selfhst/icons/png/portainer-dark.png
               hide: false
     

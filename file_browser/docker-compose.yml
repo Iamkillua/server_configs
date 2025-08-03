@@ -1,10 +1,10 @@
 services:
   filebrowser:
-    image: filebrowser/filebrowser
+    image: filebrowser/filebrowser:v2.32.3
     ports:
-      - "8089:80"
+      - "8069:80"
     volumes:
-      - ./filebrowser_data:/srv
+      - /home/harsh/Downloads:/srv
       - ./filebrowser_database:/database
       - ./filebrowser_config:/config
 
