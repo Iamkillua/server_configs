@@ -5,6 +5,9 @@
 /file_browser/filebrowser_data/
 /file_browser/filebrowser_config/
 /pihole/etc-pihole
+/zoraxy/config/
+/zoraxy/plugin/
+/sea_anime/seanime-config/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

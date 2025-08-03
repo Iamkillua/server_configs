@@ -1,0 +1,11 @@
+services:
+  seanime:
+    image: umagistr/seanime
+    container_name: seanime
+    volumes:
+      - /home/harsh/Downloads/anime:/anime
+      - /home/harsh/Downloads:/downloads
+      - ./seanime-config:/root/.config/Seanime
+    ports:
+      - 3211:43211
+    restart: always
