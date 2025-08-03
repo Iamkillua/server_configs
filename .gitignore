@@ -4,7 +4,7 @@
 /file_browser/filebrowser_database/
 /file_browser/filebrowser_data/
 /file_browser/filebrowser_config/
-
+/pihole/etc-pihole
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
